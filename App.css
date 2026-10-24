@@ -1,0 +1,56 @@
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f3;
+  color: #26352b;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Common Buttons */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #26734d;
+  outline-offset: 2px;
+}
+
+/* Page Layout */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .login-box {
+    width: calc(100% - 32px);
+    padding: 24px;
+  }
+
+  .login-box h1 {
+    font-size: 21px;
+  }
+}

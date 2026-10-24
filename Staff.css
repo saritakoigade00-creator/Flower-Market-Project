@@ -1,0 +1,392 @@
+
+.staff-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f8fc;
+  color: #243047;
+  font-family: Arial, sans-serif;
+}
+
+.staff-sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-right: 1px solid #e7eaf0;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 8px 30px;
+}
+
+.staff-brand > span {
+  color: #d94c8a;
+  font-size: 35px;
+}
+
+.staff-brand h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #26334a;
+}
+
+.staff-brand p {
+  margin: 5px 0 0;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #8993a5;
+}
+
+.staff-menu-label {
+  padding-left: 12px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #9ba3b1;
+  font-weight: bold;
+}
+
+.staff-navigation {
+  display: grid;
+  gap: 8px;
+}
+
+.staff-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #667085;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.staff-menu > span {
+  font-size: 18px;
+}
+
+.staff-menu:hover,
+.staff-menu.active {
+  background: #e8f7ef;
+  color: #238454;
+  font-weight: bold;
+}
+
+.staff-sidebar-bottom {
+  margin-top: auto;
+  padding: 18px 5px 0;
+  border-top: 1px solid #edf0f4;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.staff-avatar {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dff4e8;
+  color: #258151;
+  font-weight: bold;
+}
+
+.staff-sidebar-bottom strong {
+  font-size: 13px;
+}
+
+.staff-sidebar-bottom p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #8993a5;
+}
+
+.staff-main {
+  flex: 1;
+  min-width: 0;
+  padding: 25px 32px;
+}
+
+.staff-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.staff-breadcrumb {
+  margin: 0 0 7px;
+  color: #929bad;
+  font-size: 12px;
+}
+
+.staff-topbar h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.staff-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.staff-online {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #258151;
+  font-size: 12px;
+}
+
+.staff-online > span {
+  width: 8px;
+  height: 8px;
+  background: #2db878;
+  border-radius: 50%;
+}
+
+.staff-logout {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 17px;
+  background: #c62828;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-logout:hover {
+  background: #a61b1b;
+}
+
+.staff-welcome {
+  padding: 34px;
+  min-height: 195px;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #e3f7eb, #f7fdf9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.staff-eyebrow {
+  color: #278657;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.staff-welcome h1 {
+  margin: 15px 0 10px;
+  font-size: 31px;
+  color: #233b30;
+}
+
+.staff-welcome p {
+  margin: 0;
+  max-width: 540px;
+  color: #66776e;
+  line-height: 1.7;
+}
+
+.staff-welcome .staff-email {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.staff-welcome-icon {
+  font-size: 76px;
+}
+
+.staff-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 25px 0 35px;
+}
+
+.staff-stat-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(28, 44, 68, 0.03);
+}
+
+.staff-stat-icon {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.staff-stat-card p {
+  color: #6e788a;
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.staff-stat-card h2 {
+  font-size: 29px;
+  margin: 0 0 9px;
+}
+
+.staff-stat-card > span {
+  font-size: 11px;
+  color: #98a1b0;
+}
+
+.staff-work-section {
+  background: #ffffff;
+  padding: 27px;
+  border: 1px solid #edf0f5;
+  border-radius: 15px;
+}
+
+.staff-work-section > h2 {
+  margin: 10px 0;
+  font-size: 23px;
+}
+
+.staff-section-description {
+  color: #7e8899;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.staff-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.staff-work-card {
+  padding: 23px;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+}
+
+.staff-work-card > span {
+  font-size: 30px;
+}
+
+.staff-work-card h3 {
+  margin: 15px 0 8px;
+  font-size: 17px;
+}
+
+.staff-work-card p {
+  color: #7e8899;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.staff-work-card button {
+  margin-top: 10px;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #258151;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 25px 0 5px;
+  color: #929bad;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .staff-sidebar {
+    width: 205px;
+  }
+
+  .staff-main {
+    padding: 20px;
+  }
+
+  .staff-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .staff-dashboard {
+    flex-direction: column;
+  }
+
+  .staff-sidebar {
+    width: auto;
+    padding: 16px;
+  }
+
+  .staff-brand {
+    padding-bottom: 12px;
+  }
+
+  .staff-sidebar-bottom {
+    display: none;
+  }
+
+  .staff-navigation {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .staff-menu {
+    justify-content: center;
+    padding: 10px 5px;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .staff-main {
+    padding: 16px;
+  }
+
+  .staff-topbar {
+    align-items: flex-start;
+  }
+
+  .staff-top-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
+
+  .staff-welcome {
+    padding: 22px;
+  }
+
+  .staff-welcome h1 {
+    font-size: 24px;
+  }
+
+  .staff-welcome-icon {
+    font-size: 43px;
+  }
+
+  .staff-stats,
+  .staff-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-footer {
+    flex-direction: column;
+  }
+}
